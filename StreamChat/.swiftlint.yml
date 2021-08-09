@@ -1,0 +1,49 @@
+//
+//  .swiftlint.yml
+//  StreamChat
+//
+//  Created by 배은서 on 2021/08/10.
+//
+
+disabled_rules:
+  - colon
+  - comma
+  - control_statement
+  - trailing_whitespace
+opt_in_rules:
+  - empty_count
+  - missing_docs
+
+included:
+  - StreamChat
+excluded:
+  - StreamChat/AppDelegate.swift
+  - StreamChat/SceneDelegate.swift
+
+force_cast: warning
+force_try:
+  severity: warning
+
+line_length: 110
+
+type_body_length:
+  - 300
+  - 400
+
+file_length:
+  warning: 500
+  error: 1200
+
+type_name:
+  min_length: 4
+  max_length:
+    warning: 40
+    error: 50
+  excluded: iPhone
+identifier_name:
+  min_length:
+    error: 2
+  excluded:
+    - id
+    - GlobalAPIKey
+reporter: "xcode"
